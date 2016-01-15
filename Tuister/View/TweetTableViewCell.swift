@@ -8,15 +8,20 @@
 
 import UIKit
 
+import AlamofireImage
+
 class TweetTableViewCell: UITableViewCell {
 
     @IBOutlet weak var profileAvatarImageView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var userHandleLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var screenNameLabel: UILabel!
     @IBOutlet weak var tweetContentLabel: UILabel!
 
-    
-    override func intrinsicContentSize() -> CGSize {
-        return self.bounds.size
+    func update(tweet: Tweet) {
+        self.tweetContentLabel.text = tweet.text
+        self.nameLabel.text = tweet.user.name
+        self.screenNameLabel.text = tweet.user.screenName
+        self.profileAvatarImageView.af_setImageWithURL(tweet.user.profileImageURL)
     }
+    
 }

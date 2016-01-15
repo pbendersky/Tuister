@@ -7,4 +7,6 @@ use_frameworks!
 
 target 'Tuister' do
 	pod 'SwiftyJSON'
+	pod 'Alamofire'
+	pod 'AlamofireImage'
 end

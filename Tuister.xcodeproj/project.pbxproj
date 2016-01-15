@@ -19,6 +19,7 @@
 		6E7704271C46DFDA00190B03 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7704261C46DFDA00190B03 /* Tweet.swift */; };
 		6ED23C1A1C47E07B00FFC922 /* TweetCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED23C191C47E07B00FFC922 /* TweetCellView.xib */; };
 		6ED23C1D1C4830A500FFC922 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED23C1C1C4830A500FFC922 /* TweetTableViewCell.swift */; };
+		6ED23C1F1C49304D00FFC922 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED23C1E1C49304D00FFC922 /* User.swift */; };
 		964B6F9EDC9C6D37C1DB0D97 /* Pods_Tuister.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B1A5400C39ACEA07686A00 /* Pods_Tuister.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		6E7704261C46DFDA00190B03 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		6ED23C191C47E07B00FFC922 /* TweetCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCellView.xib; sourceTree = "<group>"; };
 		6ED23C1C1C4830A500FFC922 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		6ED23C1E1C49304D00FFC922 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				6E7704261C46DFDA00190B03 /* Tweet.swift */,
+				6ED23C1E1C49304D00FFC922 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			files = (
 				6E0AD1241C44157F00D2D7D9 /* Tuister.swift in Sources */,
 				6E7704271C46DFDA00190B03 /* Tweet.swift in Sources */,
+				6ED23C1F1C49304D00FFC922 /* User.swift in Sources */,
 				6E0AD0F81C44084000D2D7D9 /* DetailViewController.swift in Sources */,
 				6E0AD0F61C44084000D2D7D9 /* MasterViewController.swift in Sources */,
 				6E0AD0F41C44084000D2D7D9 /* AppDelegate.swift in Sources */,

@@ -70,7 +70,8 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("TweetCell", forIndexPath: indexPath) as! TweetTableViewCell
 
         let tweet = tweets![indexPath.row]
-        cell.tweetContentLabel.text = tweet.text
+        cell.update(tweet)
+        
         cell.layoutMargins = UIEdgeInsetsZero
         return cell
     }

@@ -10,6 +10,7 @@ import Accounts
 import Social
 
 import SwiftyJSON
+import Alamofire
 
 class Tuister {
 
@@ -52,4 +53,5 @@ class Tuister {
             }
         }
     }
+    
 }

@@ -65,10 +65,10 @@
                 </variation>
             </tableViewCellContentView>
             <connections>
+                <outlet property="nameLabel" destination="DYk-bT-ha3" id="G1n-3O-iIH"/>
                 <outlet property="profileAvatarImageView" destination="ooI-Fc-H8B" id="aSZ-s4-s09"/>
+                <outlet property="screenNameLabel" destination="sso-lN-joB" id="vDW-oA-05g"/>
                 <outlet property="tweetContentLabel" destination="p8Y-PY-8iH" id="xh6-fj-Wwv"/>
-                <outlet property="userHandleLabel" destination="sso-lN-joB" id="9lg-aN-31O"/>
-                <outlet property="userNameLabel" destination="DYk-bT-ha3" id="ExM-Qz-5Xs"/>
             </connections>
             <point key="canvasLocation" x="326.5" y="340.5"/>
         </tableViewCell>
