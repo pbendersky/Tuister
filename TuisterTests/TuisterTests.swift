@@ -11,26 +11,24 @@ import XCTest
 
 class TuisterTests: XCTestCase {
     
+    private var tuister: Tuister!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        self.tuister = Tuister()
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testQuery() {
+        let account = self.tuister.firstAccount()
+        
+        let expectation = expectationWithDescription("Tuister completion handler")
+        
+        self.tuister.search(account!, term: "@nsconfarg") { (_: [Tweet]) -> Void in
+            expectation.fulfill()
         }
+        
+        waitForExpectationsWithTimeout(10, handler: nil)
     }
     
 }
