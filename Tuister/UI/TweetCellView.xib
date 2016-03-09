@@ -25,18 +25,21 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYk-bT-ha3">
                         <rect key="frame" x="76" y="8" width="74" height="20"/>
+                        <accessibility key="accessibilityConfiguration" identifier="name"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@starwars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sso-lN-joB">
                         <rect key="frame" x="158" y="9" width="72" height="18"/>
+                        <accessibility key="accessibilityConfiguration" identifier="screenName"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                         <color key="textColor" red="0.61609209656084651" green="0.61609209656084651" blue="0.61609209656084651" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a 140 character tweet fitting in here in multiple lines." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="333" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-PY-8iH">
                         <rect key="frame" x="76" y="47" width="333" height="41"/>
+                        <accessibility key="accessibilityConfiguration" identifier="tweetDetail"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
