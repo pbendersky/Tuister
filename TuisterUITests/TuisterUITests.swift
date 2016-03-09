@@ -28,9 +28,18 @@ class TuisterUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNavigateToDetail() {
+        let tablesQuery = XCUIApplication().tables
+        let label = tablesQuery.cells.elementBoundByIndex(0).descendantsMatchingType(.StaticText).elementBoundByIndex(2)
+        
+        let handle = label.label
+        
+        tablesQuery.cells.elementBoundByIndex(0).tap()
+        
+        let detailLabels = XCUIApplication().descendantsMatchingType(.StaticText)
+        let handleInDetail = detailLabels.elementBoundByIndex(2).label
+        
+        XCTAssertEqual(handle, handleInDetail)
     }
     
 }
