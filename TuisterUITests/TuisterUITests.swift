@@ -42,4 +42,17 @@ class TuisterUITests: XCTestCase {
         XCTAssertEqual(handle, handleInDetail)
     }
     
+    func testNavigateToDetail2() {
+        let app = XCUIApplication()
+        let label = app.tables.childrenMatchingType(.Cell).elementBoundByIndex(0).staticTexts["screenName"]
+        
+        let handle = label.label
+        label.tap()
+        
+        let detailLabel = app.staticTexts["screenName"]
+        let handleInDetail = detailLabel.label
+        
+        XCTAssertEqual(handle, handleInDetail)
+    }
+    
 }
