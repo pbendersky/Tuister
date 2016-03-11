@@ -9,14 +9,14 @@
 import XCTest
 @testable import Tuister
 
-class TuisterTests: XCTestCase {
+class TwitterTests: XCTestCase {
     
     private var tuister: Tuister!
     
     override func setUp() {
         super.setUp()
         
-        self.tuister = Tuister()
+        self.tuister = Twitter()
     }
     
     func testQuery() {
