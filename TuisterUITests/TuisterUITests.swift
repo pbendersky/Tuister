@@ -58,4 +58,13 @@ class TuisterUITests: XCTestCase {
         XCTAssertEqual(handle, handleInDetail)
     }
     
+    func testTweetOrderInTable() {
+        let app = XCUIApplication()
+        let label = app.tables.childrenMatchingType(.Cell).elementBoundByIndex(0).staticTexts["screenName"]
+        
+        let handle = label.label
+        
+        XCTAssertEqual(handle, "maro_beta")
+    }
+    
 }
