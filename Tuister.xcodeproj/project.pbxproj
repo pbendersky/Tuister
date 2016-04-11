@@ -13,9 +13,12 @@
 		6E0AD0FB1C44084000D2D7D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0AD0F91C44084000D2D7D9 /* Main.storyboard */; };
 		6E0AD0FD1C44084000D2D7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0AD0FC1C44084000D2D7D9 /* Assets.xcassets */; };
 		6E0AD1001C44084000D2D7D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0AD0FE1C44084000D2D7D9 /* LaunchScreen.storyboard */; };
-		6E0AD10B1C44084000D2D7D9 /* TuisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AD10A1C44084000D2D7D9 /* TuisterTests.swift */; };
+		6E0AD10B1C44084000D2D7D9 /* TwitterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AD10A1C44084000D2D7D9 /* TwitterTests.swift */; };
 		6E0AD1161C44084000D2D7D9 /* TuisterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AD1151C44084000D2D7D9 /* TuisterUITests.swift */; };
 		6E0AD1241C44157F00D2D7D9 /* Tuister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0AD1231C44157F00D2D7D9 /* Tuister.swift */; };
+		6E384F031C930F2D007DE418 /* Twitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E384F021C930F2D007DE418 /* Twitter.swift */; };
+		6E384F051C930F38007DE418 /* FakeTwitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E384F041C930F37007DE418 /* FakeTwitter.swift */; };
+		6E384F071C9337C2007DE418 /* TuisterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E384F061C9337C2007DE418 /* TuisterStrategy.swift */; };
 		6E7704271C46DFDA00190B03 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7704261C46DFDA00190B03 /* Tweet.swift */; };
 		6ED23C1A1C47E07B00FFC922 /* TweetCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED23C191C47E07B00FFC922 /* TweetCellView.xib */; };
 		6ED23C1D1C4830A500FFC922 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED23C1C1C4830A500FFC922 /* TweetTableViewCell.swift */; };
@@ -53,12 +56,15 @@
 		6E0AD0FF1C44084000D2D7D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E0AD1011C44084000D2D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0AD1061C44084000D2D7D9 /* TuisterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuisterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E0AD10A1C44084000D2D7D9 /* TuisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuisterTests.swift; sourceTree = "<group>"; };
+		6E0AD10A1C44084000D2D7D9 /* TwitterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterTests.swift; sourceTree = "<group>"; };
 		6E0AD10C1C44084000D2D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0AD1111C44084000D2D7D9 /* TuisterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuisterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0AD1151C44084000D2D7D9 /* TuisterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuisterUITests.swift; sourceTree = "<group>"; };
 		6E0AD1171C44084000D2D7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0AD1231C44157F00D2D7D9 /* Tuister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuister.swift; sourceTree = "<group>"; };
+		6E384F021C930F2D007DE418 /* Twitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Twitter.swift; sourceTree = "<group>"; };
+		6E384F041C930F37007DE418 /* FakeTwitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeTwitter.swift; sourceTree = "<group>"; };
+		6E384F061C9337C2007DE418 /* TuisterStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuisterStrategy.swift; sourceTree = "<group>"; };
 		6E7704261C46DFDA00190B03 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		6ED23C191C47E07B00FFC922 /* TweetCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetCellView.xib; sourceTree = "<group>"; };
 		6ED23C1C1C4830A500FFC922 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +150,9 @@
 				6E0AD0FE1C44084000D2D7D9 /* LaunchScreen.storyboard */,
 				6E0AD1011C44084000D2D7D9 /* Info.plist */,
 				6E0AD1231C44157F00D2D7D9 /* Tuister.swift */,
+				6E384F021C930F2D007DE418 /* Twitter.swift */,
+				6E384F041C930F37007DE418 /* FakeTwitter.swift */,
+				6E384F061C9337C2007DE418 /* TuisterStrategy.swift */,
 			);
 			path = Tuister;
 			sourceTree = "<group>";
@@ -151,7 +160,7 @@
 		6E0AD1091C44084000D2D7D9 /* TuisterTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E0AD10A1C44084000D2D7D9 /* TuisterTests.swift */,
+				6E0AD10A1C44084000D2D7D9 /* TwitterTests.swift */,
 				6E0AD10C1C44084000D2D7D9 /* Info.plist */,
 			);
 			path = TuisterTests;
@@ -377,10 +386,13 @@
 				6E0AD1241C44157F00D2D7D9 /* Tuister.swift in Sources */,
 				6E7704271C46DFDA00190B03 /* Tweet.swift in Sources */,
 				6ED23C1F1C49304D00FFC922 /* User.swift in Sources */,
+				6E384F031C930F2D007DE418 /* Twitter.swift in Sources */,
 				6E0AD0F81C44084000D2D7D9 /* DetailViewController.swift in Sources */,
 				6E0AD0F61C44084000D2D7D9 /* MasterViewController.swift in Sources */,
+				6E384F051C930F38007DE418 /* FakeTwitter.swift in Sources */,
 				6E0AD0F41C44084000D2D7D9 /* AppDelegate.swift in Sources */,
 				6ED23C1D1C4830A500FFC922 /* TweetTableViewCell.swift in Sources */,
+				6E384F071C9337C2007DE418 /* TuisterStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E0AD10B1C44084000D2D7D9 /* TuisterTests.swift in Sources */,
+				6E0AD10B1C44084000D2D7D9 /* TwitterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
