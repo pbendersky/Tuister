@@ -12,6 +12,8 @@ class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
     var tweets: [Tweet]?
+    
+    var tuister: Tuister?
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -24,11 +26,16 @@ class MasterViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        self.tuister = appDelegate.tuisterStrategy.newTuisterInstance()
+        
         self.tableView.registerNib(UINib(nibName: "TweetCellView", bundle: nil), forCellReuseIdentifier: "TweetCell")
     }
     
     override func viewDidAppear(animated: Bool) {
-        let tuister = Tuister()
+        let tuister = self.tuister!
+        
         tuister.ensureAccessToAccounts { [weak self] (granted: Bool) -> Void in
             tuister.search(tuister.firstAccount()!, term: "nsconfarg", completion: { (tweets: [Tweet]) -> Void in
                 self?.tweets = tweets
